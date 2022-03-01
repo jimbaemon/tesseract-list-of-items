@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'jimbae.com'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.slf4j:slf4j-api:1.7.7'
+    implementation 'ch.qos.logback:logback-classic:1.1.2'
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    implementation 'net.sourceforge.tess4j:tess4j:5.1.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
